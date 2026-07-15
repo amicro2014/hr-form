@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>人事档案资料卡 - 珠海一微科技</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Microsoft YaHei","SimSun",sans-serif;background:#e8e8e8;padding:20px 8px;font-size:13px}
+.page{max-width:1050px;margin:0 auto;background:#fff;padding:40px 45px 35px;box-shadow:0 2px 12px rgba(0,0,0,0.15)}
+.title-row{text-align:center;margin-bottom:18px}
+.title-row h1{font-size:22px;font-weight:bold;letter-spacing:4px}
+.title-row h2{font-size:14px;font-weight:normal;margin-top:2px;letter-spacing:2px}
+.star-hint{text-align:right;font-size:12px;color:#666;margin-bottom:8px}
+.section-head{font-size:13px;font-weight:bold;padding:6px 8px;margin-top:14px;background:#e8e8e8;border:1px solid #000;border-bottom:none;letter-spacing:2px;text-align:center}
+.optional-mark{font-size:11px;color:#999;font-weight:normal;margin-left:6px}
+table.ft{width:100%;border-collapse:collapse;table-layout:fixed}
+table.ft td{border:1px solid #000;padding:4px 5px;vertical-align:middle;height:30px;font-size:13px;line-height:1.4}
+table.ft td.lb{background:#f5f5f5;font-weight:bold;text-align:center;font-size:11.5px}
+table.ft td input[type="text"],table.ft td input[type="date"],table.ft td input[type="month"],table.ft td select{width:100%;border:none;outline:none;font-size:13px;font-family:inherit;background:transparent;padding:2px 3px}
+table.ft td select{-webkit-appearance:none;appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M6 8L1 3h10z' fill='%23666'/%3E%3C/svg%3E") no-repeat right 4px center;padding-right:20px;cursor:pointer}
+thead td{background:#f0f0f0;font-weight:bold;text-align:center;font-size:12px;height:26px}
+td.pc{text-align:center;font-size:11px;color:#999;width:80px}
+td.pc .pp{width:70px;height:85px;border:1px dashed #ccc;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:11px;color:#aaa;cursor:pointer}
+.req{color:#c00;font-weight:bold}
+input[type="date"]::-webkit-datetime-edit{visibility:hidden}
+input[type="date"]:focus::-webkit-datetime-edit,input[type="date"]:valid::-webkit-datetime-edit{visibility:visible}
+.arw{text-align:center;padding:5px 0}
+.btn-ar{font-size:12px;padding:3px 14px;border:1px dashed #999;background:#fafafa;cursor:pointer;font-family:inherit;color:#555;border-radius:2px}
+.btn-ar:hover{border-color:#1a56db;color:#1a56db;background:#eef3ff}
+.btn-rm{font-size:11px;border:none;background:none;cursor:pointer;color:#c00;padding:0 3px;font-family:inherit}
+.ao td{height:34px}.ao td label{margin-right:16px;cursor:pointer;white-space:nowrap;font-size:13px}
+.dt{font-size:12px;line-height:1.8;color:#333;padding:6px 2px}.dt p{text-indent:2em;margin-bottom:3px}
+.sr{display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap}
+.sl{font-weight:bold;font-size:13px;white-space:nowrap}
+.sw{border:1px solid #000;border-radius:3px;background:#fafafa;touch-action:none}
+.sw canvas{display:block;cursor:crosshair;width:100%}
+.sa{display:flex;gap:8px;margin-top:4px}
+.sb{font-size:11px;padding:2px 10px;border:1px solid #ccc;background:#fff;border-radius:2px;cursor:pointer;font-family:inherit}
+.actions{text-align:center;margin-top:22px}
+.btn-sub{padding:10px 50px;background:#1a56db;color:#fff;border:none;font-size:15px;font-weight:bold;cursor:pointer;border-radius:3px;font-family:inherit;letter-spacing:2px}
+.btn-sub:hover{background:#1e40af}.btn-sub:disabled{background:#93c5fd;cursor:not-allowed}
+.ok{display:none;text-align:center;padding:60px 40px}
+.ok .ck{display:inline-block;width:70px;height:70px;border-radius:50%;background:#059669;color:#fff;font-size:36px;line-height:70px;margin-bottom:18px}
+.ok h2{color:#059669;margin-bottom:10px}
+.tt{position:fixed;top:20px;right:20px;padding:10px 20px;border-radius:4px;color:#fff;font-size:14px;z-index:9999;box-shadow:0 2px 10px rgba(0,0,0,0.2);animation:si .3s ease}
+.tt.ok{background:#059669;display:block}.tt.er{background:#dc2626;display:block}.tt.if{background:#1a56db;display:block}
+@keyframes si{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+.sp{display:inline-block;width:16px;height:16px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spp .6s linear infinite;vertical-align:middle;margin-right:6px}
+@keyframes spp{to{transform:rotate(360deg)}}
+textarea{width:100%;border:none;outline:none;font-size:13px;font-family:inherit;resize:vertical;min-height:45px;background:transparent;padding:2px 3px}
+@media(max-width:640px){.page{padding:20px 12px}}
+</style></head><body>
+<div class="page" id="fp">
+<div class="title-row"><h1>人事档案资料卡</h1><h2>珠海一微科技股份有限公司</h2></div>
+<div class="star-hint">带 "<span class="req">*</span>" 内容为选填项</div>
+<form onsubmit="return false"><table class="ft">
+<tr><td class="lb" style="width:70px">姓名</td><td style="width:160px"><input type="text" name="name" required></td><td class="lb" style="width:55px">曾用名</td><td style="width:135px"><input type="text" name="former_name"></td><td class="lb" style="width:70px">出生日期</td><td style="width:140px"><input type="date" name="birth_date" required></td><td class="pc" rowspan="4"><div class="pp" onclick="document.getElementById('pi').click()">相片<br>（小1寸）<br><span style="font-size:10px;color:#1a56db">点击上传</span></div><input type="file" id="pi" accept="image/*" style="display:none" onchange="hp(this)"><input type="hidden" name="photo" id="pd"></td></tr>
+<tr><td class="lb">最高学历</td><td><select name="highest_degree"><option value="">请选择</option><option value="博士">博士</option><option value="硕士">硕士</option><option value="本科">本科</option><option value="大专">大专</option><option value="高中">高中</option><option value="其他">其他</option></select></td><td class="lb">职称</td><td><input type="text" name="professional_title"></td><td class="lb">手机号码</td><td><input type="text" name="phone"></td></tr>
+<tr><td class="lb">婚姻状况</td><td><select name="marital_status"><option value="">请选择</option><option value="未婚">未婚</option><option value="已婚">已婚</option><option value="离异">离异</option><option value="丧偶">丧偶</option></select></td><td class="lb">性别</td><td><select name="gender"><option value="">请选择</option><option value="男">男</option><option value="女">女</option></select></td><td class="lb">*血型</td><td><input type="text" name="blood_type" maxlength="3"></td></tr>
+<tr><td class="lb">*身高</td><td><input type="text" name="height" placeholder="cm"></td><td class="lb">*体重</td><td><input type="text" name="weight" placeholder="kg"></td><td class="lb"></td><td></td></tr>
+<tr><td class="lb">籍贯</td><td><input type="text" name="native_place" placeholder="省/直辖市 市"></td><td class="lb">民族</td><td><input type="text" name="ethnicity"></td><td class="lb">政治面貌</td><td colspan="2"><input type="text" name="political_status"></td></tr>
+<tr><td class="lb">户口所在地</td><td><input type="text" name="household_location" placeholder="省/直辖市 市"></td><td class="lb">户口类型</td><td colspan="4"><label style="margin-right:20px"><input type="radio" name="household_type" value="农村" style="width:auto"> 农村</label><label style="margin-right:20px"><input type="radio" name="household_type" value="城镇" style="width:auto"> 城镇</label></td></tr>
+<tr><td class="lb">身份证号码</td><td colspan="2"><input type="text" name="id_number" maxlength="18"></td><td class="lb">身份证地址</td><td colspan="3"><input type="text" name="id_address"></td></tr>
+<tr><td class="lb">现住址</td><td colspan="2"><input type="text" name="current_address"></td><td class="lb">个人档案所在地及单位</td><td colspan="3"><input type="text" name="archive_location"></td></tr>
+<tr><td class="lb">紧急联系人</td><td><input type="text" name="emergency_contact"></td><td class="lb">关系</td><td><input type="text" name="emergency_relationship"></td><td class="lb">紧急联系人电话</td><td colspan="2"><input type="text" name="emergency_phone"></td></tr>
+</table>
+<div class="section-head">教育经历（从最高学历填起）</div>
+<table class="ft"><thead><tr><td style="width:10%">开始时间</td><td style="width:10%">结束时间</td><td style="width:20%">学校名称</td><td style="width:11%">学历</td><td style="width:16%">专业</td><td style="width:14%">全日制/非全日制</td><td style="width:5%">操作</td></tr></thead><tbody id="eb"></tbody></table>
+<div class="arw"><button type="button" class="btn-ar" onclick="addE()">+ 添加一行</button></div>
+<div class="section-head">工作经历（从最近工作经历填起）</div>
+<table class="ft"><thead><tr><td style="width:9%">开始时间</td><td style="width:9%">结束时间</td><td style="width:17%">工作单位</td><td style="width:11%">职位</td><td style="width:9%">薪资</td><td style="width:11%">离职原因</td><td style="width:17%">证明人及联系电话</td><td style="width:5%">操作</td></tr></thead><tbody id="wb"></tbody></table>
+<div class="arw"><button type="button" class="btn-ar" onclick="addW()">+ 添加一行</button></div>
+<div class="section-head">银行卡信息（工商银行）</div>
+<table class="ft"><thead><tr><td style="width:30%">卡号</td><td style="width:35%">开户省份及城市</td><td style="width:20%">是否一类卡</td></tr></thead><tbody><tr><td><input type="text" name="bank_card_number"></td><td><input type="text" name="bank_open_location"></td><td><select name="bank_is_class1"><option value="">请选择</option><option value="是">是</option><option value="否">否</option></select></td></tr></tbody></table>
+<div class="section-head">公积金信息</div>
+<table class="ft"><thead><tr><td style="width:30%">原公积金购买地（省份及城市）</td><td style="width:35%">公积金账户</td><td style="width:20%">原公积金是否已封存</td></tr></thead><tbody><tr><td><input type="text" name="fund_purchase_location"></td><td><input type="text" name="fund_account"></td><td><select name="fund_is_sealed"><option value="">请选择</option><option value="是">是</option><option value="否">否</option></select></td></tr></tbody></table>
+<div class="section-head">*家庭状况（父母、配偶或子女）<span class="optional-mark">选填</span></div>
+<table class="ft"><thead><tr><td style="width:16%">姓名</td><td style="width:14%">关系</td><td style="width:28%">单位</td><td style="width:22%">职务</td><td style="width:5%">操作</td></tr></thead><tbody id="fb"></tbody></table>
+<div class="arw"><button type="button" class="btn-ar" onclick="addF()">+ 添加一行</button></div>
+<table class="ft" style="margin-top:12px"><tr><td class="lb" style="width:130px">兴趣爱好、个人特长</td><td><textarea name="hobbies" rows="2"></textarea></td></tr></table>
+<table class="ft ao"><tr><td class="lb" style="width:130px">协会</td><td><label><input type="checkbox" name="association_outdoor"> 户外协会</label><label><input type="checkbox" name="association_ball"> 大球协会</label><label><input type="checkbox" name="association_badminton"> 羽毛球协会</label><label><input type="checkbox" name="association_camping"> 露营协会</label></td></tr></table>
+<table class="ft" style="margin-top:10px"><tr><td class="section-head" style="border:1px solid #000;border-bottom:none">声明</td></tr><tr><td style="padding:8px 10px"><div class="dt"><p>本人保证本次入职办理所填写的身份信息、学历学位、专业资质、工作履历、从业资格、等及工作相关的全部内容真实、准确、完整，无虚假填报、隐瞒、遗漏、伪造情形。</p><p>本人授权公司对上述信息进行核验。若本人填报的，与录用、岗位履职直接相关的关键信息存在虚假或重大隐瞒，公司有权依据《劳动合同法》有关规定单方解除劳动合同且无需支付任何经济补偿金、赔偿金，若给公司造成损失的，本人承担全部赔偿责任。后续若住址、电话号码等个人信息有更新，须及时告知综合管理部。</p></div><div style="margin-top:6px"><label style="cursor:pointer;font-weight:bold"><input type="checkbox" name="declaration_agreed" required> 我已阅读并同意以上声明内容</label></div><div class="sr"><span class="sl">本人签字：</span><div class="sw"><canvas id="sc" width="300" height="100" style="width:100%;max-width:300px"></canvas></div><div><div class="sa"><button type="button" class="sb" onclick="cls()">清除重签</button></div><div style="font-size:10px;color:#999;margin-top:2px">手指/触控笔直接书写</div></div></div><input type="hidden" name="signature" id="sd"></td></tr></table>
+<div class="actions"><button type="button" class="btn-sub" id="sbtn" onclick="sf()">提 交 档 案</button></div></form></div>
+<div class="page ok" id="ok"><div class="ck">✓</div><h2>提交成功！</h2><p>您的人事档案资料卡已成功提交。</p><p style="font-size:12px;color:#999">如需修改，请联系综合管理部。</p></div>
+<script>
+var BID='019f655c-6864-7e87-a4aa-ceed562252c5',API='https://jsonblob.com/api/jsonBlob/'+BID;
+var pb='',sh=false,sc,ctx,sd=true;
+function hp(i){var f=i.files[0];if(!f)return;var r=new FileReader();r.onload=function(e){pb=e.target.result;document.getElementById('pd').value=pb;var ph=document.querySelector('.pp');ph.innerHTML='<img src="'+pb+'" style="width:70px;height:85px;object-fit:cover">';ph.style.border='none';ph.style.padding='0';ph.onclick=function(){document.getElementById('pi').click()}};r.readAsDataURL(f)}
+function is(){sc=document.getElementById('sc');ctx=sc.getContext('2d');ctx.strokeStyle='#000';ctx.lineWidth=2;ctx.lineCap='round';ctx.lineJoin='round';function gp(e){var r=sc.getBoundingClientRect();var cx=e.touches?e.touches[0].clientX:e.clientX;var cy=e.touches?e.touches[0].clientY:e.clientY;return{x:(cx-r.left)*(sc.width/r.width),y:(cy-r.top)*(sc.height/r.height)}}
+sc.addEventListener('mousedown',function(e){sd=true;var p=gp(e);ctx.beginPath();ctx.moveTo(p.x,p.y)});
+sc.addEventListener('mousemove',function(e){if(!sd)return;e.preventDefault();var p=gp(e);ctx.lineTo(p.x,p.y);ctx.stroke();sh=true});
+sc.addEventListener('mouseup',function(){sd=false});sc.addEventListener('mouseleave',function(){sd=false});
+sc.addEventListener('touchstart',function(e){e.preventDefault();sd=true;var p=gp(e);ctx.beginPath();ctx.moveTo(p.x,p.y)});
+sc.addEventListener('touchmove',function(e){e.preventDefault();if(!sd)return;var p=gp(e);ctx.lineTo(p.x,p.y);ctx.stroke();sh=true});
+sc.addEventListener('touchend',function(){sd=false})}is();
+function cls(){ctx.clearRect(0,0,sc.width,sc.height);sh=false;is()}
+function v(n){return(document.querySelector('[name="'+n+'"]')||{}).value||''}
+function ck(n){return(document.querySelector('[name="'+n+'"]')||{}).checked?1:0}
+function er(){return'<tr class="er"><td><input type="month" name="edu_start_time[]"></td><td><input type="month" name="edu_end_time[]"></td><td><input type="text" name="edu_school_name[]"></td><td><select name="edu_degree[]"><option value="">请选择</option><option value="博士">博士</option><option value="硕士">硕士</option><option value="本科">本科</option><option value="大专">大专</option><option value="高中">高中</option><option value="其他">其他</option></select></td><td><input type="text" name="edu_major[]"></td><td><select name="edu_study_type[]"><option value="">请选择</option><option value="全日制">全日制</option><option value="非全日制">非全日制</option></select></td><td style="text-align:center"><button type="button" class="btn-rm" onclick="rm(this,\'eb\')">删除</button></td></tr>'}
+function wr(){return'<tr class="wr"><td><input type="month" name="work_start_time[]"></td><td><input type="month" name="work_end_time[]"></td><td><input type="text" name="work_company[]"></td><td><input type="text" name="work_position[]"></td><td><input type="text" name="work_salary[]"></td><td><input type="text" name="work_leave_reason[]"></td><td><input type="text" name="work_reference[]"></td><td style="text-align:center"><button type="button" class="btn-rm" onclick="rm(this,\'wb\')">删除</button></td></tr>'}
+function fr(){return'<tr class="fr"><td><input type="text" name="family_name[]"></td><td><select name="family_relationship[]"><option value="">请选择</option><option value="父亲">父亲</option><option value="母亲">母亲</option><option value="配偶">配偶</option><option value="儿子">儿子</option><option value="女儿">女儿</option><option value="其他">其他</option></select></td><td><input type="text" name="family_company[]"></td><td><input type="text" name="family_position[]"></td><td style="text-align:center"><button type="button" class="btn-rm" onclick="rm(this,\'fb\')">删除</button></td></tr>'}
+function ir(){for(var i=0;i<3;i++)document.getElementById('eb').insertAdjacentHTML('beforeend',er());for(var i=0;i<5;i++)document.getElementById('wb').insertAdjacentHTML('beforeend',wr());for(var i=0;i<3;i++)document.getElementById('fb').insertAdjacentHTML('beforeend',fr())}ir();
+function addE(){document.getElementById('eb').insertAdjacentHTML('beforeend',er())}
+function addW(){document.getElementById('wb').insertAdjacentHTML('beforeend',wr())}
+function addF(){document.getElementById('fb').insertAdjacentHTML('beforeend',fr())}
+function rm(b,id){var rs=document.getElementById(id).querySelectorAll('tr');if(rs.length<=1){toast('至少保留一行','if');return}b.closest('tr').remove()}
+function cd(){var d={};d.name=v('name');d.former_name=v('former_name');d.birth_date=v('birth_date');d.highest_degree=v('highest_degree');d.professional_title=v('professional_title');d.phone=v('phone');d.marital_status=v('marital_status');d.gender=v('gender');d.blood_type=v('blood_type');d.height=v('height');d.weight=v('weight');d.native_place=v('native_place');d.ethnicity=v('ethnicity');d.political_status=v('political_status');d.household_location=v('household_location');d.household_type=(document.querySelector('[name="household_type"]:checked')||{}).value||'';d.id_number=v('id_number');d.id_address=v('id_address');d.current_address=v('current_address');d.archive_location=v('archive_location');d.emergency_contact=v('emergency_contact');d.emergency_relationship=v('emergency_relationship');d.emergency_phone=v('emergency_phone');d.bank_card_number=v('bank_card_number');d.bank_open_location=v('bank_open_location');d.bank_is_class1=v('bank_is_class1');d.fund_purchase_location=v('fund_purchase_location');d.fund_account=v('fund_account');d.fund_is_sealed=v('fund_is_sealed');d.hobbies=v('hobbies');d.association_outdoor=ck('association_outdoor');d.association_ball=ck('association_ball');d.association_badminton=ck('association_badminton');d.association_camping=ck('association_camping');d.declaration_agreed=ck('declaration_agreed');d.signature=sh?sc.toDataURL('image/png'):'';d.photo=pb;d.education=[];document.querySelectorAll('#eb .er').forEach(function(t){var s=(t.querySelector('[name="edu_start_time[]"]')||{}).value||'',e=(t.querySelector('[name="edu_end_time[]"]')||{}).value||'';var r={start_end_time:(s&&e)?s+'-'+e:(s||e),school_name:(t.querySelector('[name="edu_school_name[]"]')||{}).value||'',degree:(t.querySelector('[name="edu_degree[]"]')||{}).value||'',major:(t.querySelector('[name="edu_major[]"]')||{}).value||'',study_type:(t.querySelector('[name="edu_study_type[]"]')||{}).value||''};if(r.start_end_time||r.school_name||r.degree)d.education.push(r)});d.work_experience=[];document.querySelectorAll('#wb .wr').forEach(function(t){var s=(t.querySelector('[name="work_start_time[]"]')||{}).value||'',e=(t.querySelector('[name="work_end_time[]"]')||{}).value||'';var r={start_end_time:(s&&e)?s+'-'+e:(s||e),company:(t.querySelector('[name="work_company[]"]')||{}).value||'',position:(t.querySelector('[name="work_position[]"]')||{}).value||'',salary:(t.querySelector('[name="work_salary[]"]')||{}).value||'',leave_reason:(t.querySelector('[name="work_leave_reason[]"]')||{}).value||'',reference_contact:(t.querySelector('[name="work_reference[]"]')||{}).value||''};if(r.start_end_time||r.company||r.position)d.work_experience.push(r)});d.family=[];document.querySelectorAll('#fb .fr').forEach(function(t){var r={name:(t.querySelector('[name="family_name[]"]')||{}).value||'',relationship:(t.querySelector('[name="family_relationship[]"]')||{}).value||'',company:(t.querySelector('[name="family_company[]"]')||{}).value||'',position:(t.querySelector('[name="family_position[]"]')||{}).value||''};if(r.name||r.relationship)d.family.push(r)});return d}
+async function sf(){if(!v('name').trim()){toast('请填写姓名','er');return}if(!document.querySelector('[name="declaration_agreed"]').checked){toast('请勾选声明','er');return}if(!sh){toast('请签字','er');return}var b=document.getElementById('sbtn');b.disabled=true;b.innerHTML='<span class="sp"></span>提交中...';try{var dt=await(await fetch(API)).json();var e=cd();e.id=Date.now();e.submitted_at=new Date().toLocaleString('zh-CN');e.department='';e.position='';e.employee_id='';e.entry_date='';dt.submissions.push(e);await fetch(API,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(dt)});document.getElementById('fp').style.display='none';document.getElementById('ok').style.display='block';toast('提交成功！','ok')}catch(x){toast('网络错误，请重试','er')}b.disabled=false;b.innerHTML='提 交 档 案'}
+function toast(m,t){var e=document.createElement('div');e.className='tt '+t;e.textContent=m;document.body.appendChild(e);setTimeout(function(){e.remove()},3000)}
+</script></body></html>
